@@ -37,7 +37,7 @@ public class Instructor {
 	
 	public String getMostRecentBookTitle() {
 		System.out.println("Most recent book : ");
-		String bookName = books[books.length - 1].title.toString(); 
+		String bookName = books[books.length - 1].title.toString();
 		
 		return bookName;
 	
