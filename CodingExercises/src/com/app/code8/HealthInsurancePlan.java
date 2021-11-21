@@ -1,15 +1,22 @@
-package com.app.code6n7;
+package com.app.code8;
 
-public class HealthInsurancePlan {
+public abstract class HealthInsurancePlan {
     // Code for 'coverage' field goes here
     
     // Don't worry about the below code and also the InsuranceBrand class
 	private InsuranceBrand offeredBy;
 	private double coverage;
 	private double discount;
-
+	private double monthlyPremium;
 	
+	protected abstract double computeMonthlyPremium(double salary);
 	
+	public double getMonthlyPremium() {
+		return monthlyPremium;
+	}
+	public void setMonthlyPremium(double monthlyPremium) {
+		this.monthlyPremium = monthlyPremium;
+	}
 	public double getDiscount() {
 		return discount;
 	}
@@ -28,17 +35,5 @@ public class HealthInsurancePlan {
 	public void setCoverage(double coverage) {
 		this.coverage = coverage;
 	}
-
-    public static void main (String [] args) {
-        HealthInsurancePlan insurancePlan = new PlatinumPlan();
-        Patient patient = new Patient();
-        patient.setInsurancePlan(insurancePlan);
-
-        double[] payments = Billing.computePaymentAmount(patient, 1000.0);
-    
-        System.out.println("Insurance company would pay : " + payments[0]);
-        System.out.println("Patient would pay : " + payments[1]);
-    }
-	
 
 }
