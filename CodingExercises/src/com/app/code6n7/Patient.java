@@ -1,10 +1,19 @@
-package com.app.code7;
+package com.app.code6n7;
 
 public class Patient extends User{
     private long patientId;
     private boolean insured;
+    private HealthInsurancePlan insurancePlan;
 
-    public boolean isInsured() {
+    public HealthInsurancePlan getInsurancePlan() {
+		return insurancePlan;
+	}
+
+	public void setInsurancePlan(HealthInsurancePlan insurancePlan) {
+		this.insurancePlan = insurancePlan;
+	}
+
+	public boolean isInsured() {
         return insured;
     }
 
