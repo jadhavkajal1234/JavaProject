@@ -9,30 +9,30 @@ public class User {
   private HealthInsurancePlan insurancePlan;
   private int age;
   private boolean isSmoke;
+   
+  public boolean isInsured() {
+	 return insured;
+  }   
+  public void setInsured(boolean insured) {
+	  this.insured = insured;
+  }
+  public HealthInsurancePlan getInsurancePlan() {
+	  return insurancePlan;
+  }
+  public void setInsurancePlan(HealthInsurancePlan insurancePlan) {
+	  this.insurancePlan = insurancePlan;
+  }
+  public int getAge() {
+	  return age;
+  }
+  public void setAge(int age) {
+	  this.age = age;
+  }
+  public boolean isSmoke() {
+	  return isSmoke;
+  }
+  public void setSmoke(boolean isSmoke) {
+	  this.isSmoke = isSmoke;
+  }
   
-public int getAge() {
-	return age;
-}
-public void setAge(int age) {
-	this.age = age;
-}
-public boolean isSmoke() {
-	return isSmoke;
-}
-public void setSmoke(boolean isSmoke) {
-	this.isSmoke = isSmoke;
-}
-public boolean isInsured() {
-	return insured;
-}
-public void setInsured(boolean insured) {
-	this.insured = insured;
-}
-public HealthInsurancePlan getInsurancePlan() {
-	return insurancePlan;
-}
-public void setInsurancePlan(HealthInsurancePlan insurancePlan) {
-	this.insurancePlan = insurancePlan;
-}
-
 }

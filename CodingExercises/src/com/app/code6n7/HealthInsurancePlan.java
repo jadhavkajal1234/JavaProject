@@ -7,8 +7,6 @@ public class HealthInsurancePlan {
 	private InsuranceBrand offeredBy;
 	private double coverage;
 	private double discount;
-
-	
 	
 	public double getDiscount() {
 		return discount;
@@ -39,6 +37,4 @@ public class HealthInsurancePlan {
         System.out.println("Insurance company would pay : " + payments[0]);
         System.out.println("Patient would pay : " + payments[1]);
     }
-	
-
 }
