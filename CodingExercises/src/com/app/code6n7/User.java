@@ -1,4 +1,4 @@
-package com.app.code7;
+package com.app.code6n7;
 
 //Hospital Management System
 //Inheritance concepts

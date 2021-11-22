@@ -1,16 +1,7 @@
-package com.app.code7;
+package com.app.code8;
 
 public class Patient extends User{
     private long patientId;
-    private boolean insured;
-
-    public boolean isInsured() {
-        return insured;
-    }
-
-    public void setInsured(boolean insured) {
-        this.insured = insured;
-    }
 
     public long getPatientId() {
         return patientId;
